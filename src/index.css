@@ -75,3 +75,8 @@
 .experience-card:last-child .experience-copy h3{white-space:normal;overflow:visible;text-overflow:clip;font-size:18px;line-height:1.12;letter-spacing:-.02em;margin:8px 0 0;min-height:calc(1.12em * 2);height:auto}
 .experience-grid .experience-copy p{margin-top:10px}
 @media(max-width:600px){.education-grid img{height:auto;object-fit:contain}}
+
+/* Show the homepage portrait at its own size, without cropping */
+.portrait-stage .portrait-wrap{width:min(290px,100%);min-width:0;max-width:100%;height:auto;aspect-ratio:auto}
+.portrait-stage .portrait-wrap img{width:100%;height:auto;object-fit:contain;object-position:center}
+@media(max-width:600px){.portrait-stage{height:auto}.portrait-stage .portrait-wrap{height:auto}}
